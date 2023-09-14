@@ -1,0 +1,20 @@
+type Mutation {
+    createProvinceMutation(input: ProvinceInput): Boolean
+    updateProvinceMutation(id: Int!, input: ProvinceInput): Boolean
+    removeProvinceMutation(id: Int!): Boolean
+}
+type Query {
+    provinces: [Province]
+    province(id: Int!): Province
+}
+
+input ProvinceInput {
+    id: Int
+    name: String
+    description: String
+}
+type Province{
+    id: Int
+    name: String
+    description: String
+}

@@ -1,0 +1,9 @@
+type Query {
+  banners: [Banners]
+}
+type Banners {
+  id: Int
+  image: String
+  created_at: String
+}
+

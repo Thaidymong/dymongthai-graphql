@@ -1,0 +1,33 @@
+type Mutation {
+  createEmployeeMutation(input: EmployeeInput): Boolean
+  updateEmployeeMutataion(id: Int!, input: EmployeeInput): Boolean
+  removeEmployeeMutation(id: Int!): Boolean
+}
+type Query {
+  employees: [Employee]
+  employee(id: Int!): Employee
+}
+input EmployeeInput {
+  id: Int
+  firstname: String
+  lastname: String
+  gender: String
+  tel: String
+  email: String
+  base_salary: String
+  address: String
+  country: String
+  province_id: Int
+}
+type Employee {
+  id: Int
+  firstname: String
+  lastname: String
+  gender: String
+  tel: String
+  email: String
+  base_salary: String
+  address: String
+  country: String
+  province_id: Int
+}
