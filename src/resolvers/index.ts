@@ -19,6 +19,7 @@ import { UpdateProvinceMutation } from "./province/Mutation/UpdateProvinceMutati
 import { GetAllProvince } from "./province/Query/GetAllProvince";
 import { GetProvinceByID } from "./province/Query/GetProvinceById";
 import { GetAllSlideBanner } from "./slidebanner/Query/GetAllBanner";
+import { GetAllWomenProducts } from "./womenproduct/Query/GetAllWomenProduct";
 
 export const Resolvers = {
   Query: {
@@ -31,6 +32,7 @@ export const Resolvers = {
     employees: GetAllEmployee,
     employee: GetEmployeeById,
     banners: GetAllSlideBanner,
+    womenproduct: GetAllWomenProducts,
   },
   Mutation: {
     createProductsMutaiton: CreateProductsMutaiton,
