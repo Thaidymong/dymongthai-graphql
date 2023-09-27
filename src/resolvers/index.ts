@@ -8,6 +8,7 @@ import { RemoveEmployeeMutation } from "./employee/Mutation/RemoveEmployeeMutata
 import { UpdateEmployeeMutation } from "./employee/Mutation/UpdateEmployeeMutation";
 import { GetAllEmployee } from "./employee/Query/GetAllEmployee";
 import { GetEmployeeById } from "./employee/Query/GetEmployeeById";
+import { GetAllMenProducts } from "./menproducts/Query/GetAllMenProducts";
 import { CreateProductsMutaiton } from "./products/Mutation/CreateProductsMutation";
 import { RemoveProductsMutation } from "./products/Mutation/RemoveProductsMutation";
 import { UpdateProductsMutation } from "./products/Mutation/UpdateProductsMutation";
@@ -33,6 +34,7 @@ export const Resolvers = {
     employee: GetEmployeeById,
     banners: GetAllSlideBanner,
     womenproduct: GetAllWomenProducts,
+    menproducts: GetAllMenProducts,
   },
   Mutation: {
     createProductsMutaiton: CreateProductsMutaiton,

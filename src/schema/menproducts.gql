@@ -1,0 +1,14 @@
+
+type Query {
+  menproducts: [Menproducts]
+}
+
+type Menproducts {
+  id: Int
+  title: String
+  summary: String
+  description: String
+  image: String
+  category_id: Int
+  created_at: String
+}
