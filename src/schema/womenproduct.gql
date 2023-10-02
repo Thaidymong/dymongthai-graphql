@@ -1,6 +1,7 @@
 
 type Query {
   womenproduct: [WomenProducts]
+  womendetail(id: Int!): WomenProducts
 }
 
 type WomenProducts {

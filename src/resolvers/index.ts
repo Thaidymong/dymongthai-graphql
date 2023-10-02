@@ -9,6 +9,7 @@ import { UpdateEmployeeMutation } from "./employee/Mutation/UpdateEmployeeMutati
 import { GetAllEmployee } from "./employee/Query/GetAllEmployee";
 import { GetEmployeeById } from "./employee/Query/GetEmployeeById";
 import { GetAllMenProducts } from "./menproducts/Query/GetAllMenProducts";
+import { GetMenProductsDetail } from "./menproducts/Query/GetMenProductDetail";
 import { CreateProductsMutaiton } from "./products/Mutation/CreateProductsMutation";
 import { RemoveProductsMutation } from "./products/Mutation/RemoveProductsMutation";
 import { UpdateProductsMutation } from "./products/Mutation/UpdateProductsMutation";
@@ -21,6 +22,7 @@ import { GetAllProvince } from "./province/Query/GetAllProvince";
 import { GetProvinceByID } from "./province/Query/GetProvinceById";
 import { GetAllSlideBanner } from "./slidebanner/Query/GetAllBanner";
 import { GetAllWomenProducts } from "./womenproduct/Query/GetAllWomenProduct";
+import { GetWomenDetail } from "./womenproduct/Query/GetWomenDetail";
 
 export const Resolvers = {
   Query: {
@@ -34,7 +36,9 @@ export const Resolvers = {
     employee: GetEmployeeById,
     banners: GetAllSlideBanner,
     womenproduct: GetAllWomenProducts,
+    womendetail: GetWomenDetail,
     menproducts: GetAllMenProducts,
+    menproduct: GetMenProductsDetail,
   },
   Mutation: {
     createProductsMutaiton: CreateProductsMutaiton,

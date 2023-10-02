@@ -1,6 +1,6 @@
-
 type Query {
   menproducts: [Menproducts]
+  menproduct(id: Int!): Menproducts
 }
 
 type Menproducts {
